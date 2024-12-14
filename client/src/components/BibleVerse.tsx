@@ -17,7 +17,6 @@ interface StoryProps {
 export const BibleVerse = () => {
   const [verse, setVerse] = useState<VerseProps | null>(null);
   const [biblestory, setBibleStory] = useState<StoryProps | null>(null);
-  const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
     const fetchVerse = async () => {
@@ -36,7 +35,6 @@ export const BibleVerse = () => {
 
     fetchVerse();
     fetchStory();
-    setToggle((p) => !p);
   }, []);
 
   return (
