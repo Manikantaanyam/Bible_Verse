@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@prisma/client": "^6.0.1",
+    "@prisma/extension-accelerate": "^1.2.1",
+    "cors": "^2.8.5",
+    "hono": "^4.6.13",
+    "prisma": "^6.0.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241112.0",
+    "wrangler": "^3.88.0"
+  }
+}
